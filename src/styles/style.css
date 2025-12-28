@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: "Aldrich", sans-serif;
     background: #0a0a0a;
     color: white;
     min-height: 100vh;
@@ -59,6 +59,13 @@ body::after {
 header {
     text-align: center;
     margin-bottom: 50px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .profile-image {
@@ -121,10 +128,11 @@ h1 {
 /* Social Links - MANTENIDOS SIMPLES */
 .social-links {
     display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px auto 0;
 }
 
 .social-links a {
@@ -138,14 +146,29 @@ h1 {
     transform: scale(1.2);
 }
 
+/* Main Cards Container */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+main a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
+
 /* Cards Ultra Tecnológicas */
 .card {
     background: linear-gradient(135deg, rgba(20, 20, 30, 0.8) 0%, rgba(10, 10, 20, 0.9) 100%);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
     backdrop-filter: blur(20px);
-    border-radius: 20px;
-    padding: 24px 28px;
+    border-radius: 10px;
+    padding: 20px 24px;
     margin-bottom: 20px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 56px 1fr 56px;
     align-items: center;
     gap: 24px;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -153,6 +176,7 @@ h1 {
     border: 1px solid rgba(0, 255, 255, 0.2);
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 /* Efecto de grid tecnológico */
@@ -198,7 +222,7 @@ h1 {
 
 .card:hover {
     background: linear-gradient(135deg, rgba(30, 30, 50, 0.9) 0%, rgba(15, 15, 30, 0.95) 100%);
-    transform: translateX(12px) scale(1.02);
+    transform: translateX(8px) scale(1.02);
     border-color: rgba(0, 255, 255, 0.5);
     box-shadow: 
         0 8px 32px rgba(0, 255, 255, 0.3),
@@ -222,6 +246,18 @@ h1 {
         0 4px 20px rgba(0, 255, 255, 0.4),
         inset 0 1px 0 rgba(255, 255, 255, 0.2);
     position: relative;
+}
+
+.card .icon img {
+    width: 37px;
+    height: 37px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.5));
+    transition: filter 0.3s;
+}
+
+.card:hover .icon img {
+    filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.8)) brightness(1.2);
 }
 
 .card .icon::before {
@@ -251,7 +287,8 @@ h1 {
 }
 
 .card-content {
-    flex: 1;
+    text-align: center;
+    grid-column: 2;
 }
 
 .card h2 {
@@ -300,12 +337,9 @@ h1 {
 }
 
 .video-container {
-    background: linear-gradient(135deg, rgba(20, 20, 30, 0.8) 0%, rgba(10, 10, 20, 0.9) 100%);
     backdrop-filter: blur(20px);
     border-radius: 16px;
     padding: 15px;
-    border: 1px solid rgba(0, 255, 255, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 }
 
 .video-embed {
@@ -316,8 +350,6 @@ h1 {
     overflow: hidden;
     border-radius: 12px;
     margin-bottom: 10px;
-    border: 2px solid rgba(0, 255, 255, 0.3);
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
 }
 
 .video-embed iframe {
