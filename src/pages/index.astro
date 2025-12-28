@@ -6,6 +6,104 @@ import Layout from '../layouts/Layout.astro';
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Zhunaula - Portfolio</title>
+	<link rel="stylesheet" href="/src/styles/style.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="profile-image">🤖</div>
+            <h1>Sebastian Zhunaula</h1>
+            <p class="location">📍 Ecuador</p>
+            <p class="description">Software Development | Cybersecurity | Data Science and AI</p>
+            
+            <div class="social-links">
+                <a href="#" title="YouTube">▶️</a>
+                <a href="#" title="LinkedIn">💼</a>
+                <a href="#" title="GitHub">🐙</a>
+                <a href="#" title="Discord">💬</a>
+                <a href="#" title="Twitter">𝕏</a>
+                <a href="#" title="TikTok">🎵</a>
+                <a href="#" title="Instagram">📷</a>
+                <a href="#" title="Threads">🧵</a>
+            </div>
+        </header>
+
+        <!-- Main Cards -->
+        <main>
+            <div class="card">
+                <div class="icon">📦</div>
+                <div class="card-content">
+                    <h2>Portafolio</h2>
+                    <p>Mis proyectos en desarrollo, ciberseguridad y datos</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">📦</div>
+                <div class="card-content">
+                    <h2>CodeMatrix</h2>
+                    <p>Blog de tecnología y código</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">🚀</div>
+                <div class="card-content">
+                    <h2>Astro</h2>
+                    <p>Temas modernos y optimizados para Astro</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">⚙️</div>
+                <div class="card-content">
+                    <h2>CodePen</h2>
+                    <p>Demos y prototipos web en vivo</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">📦</div>
+                <div class="card-content">
+                    <h2>Hack The Box</h2>
+                    <p>Plataforma de entrenamiento en ciberseguridad</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- YouTube Section -->
+        <section class="youtube-section">
+            <h2>📹 Último video de YouTube</h2>
+            <div class="video-container">
+                <div class="video-thumbnail">
+                    <div style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), #1a1a1a; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: bold;">
+                        ¿QUÉ ES LINUX?
+                    </div>
+                    <div class="play-button">▶</div>
+                </div>
+                
+                <div class="video-info">
+                    <p class="video-title">¿Qué es Linux? El sistema operativo que domi...</p>
+                    <div class="copy-link">
+                        📋 Copiar vín...
+                    </div>
+                </div>
+
+                <div class="video-icons">
+                    <div class="video-icon debian">🌀</div>
+                    <div class="video-icon tux">🐧</div>
+                    <div class="video-icon debian-dark">🌀</div>
+                    <div class="video-icon ubuntu">🔶</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
