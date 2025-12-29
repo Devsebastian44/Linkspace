@@ -142,7 +142,7 @@ h1 {
 .social-links a {
     color: white;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 23px;
     transition: transform 0.2s;
 }
 
@@ -298,7 +298,7 @@ main a {
 }
 
 .card h2 {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 600;
     margin-bottom: 6px;
     background: linear-gradient(135deg, #00ffff 0%, #ffffff 50%, #ff00ff 100%);
@@ -317,7 +317,7 @@ main a {
 }
 
 .card p {
-    font-size: 14px;
+    font-size: 13px;
     color: #aaa;
     transition: color 0.3s;
     line-height: 1.5;
