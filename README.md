@@ -1,31 +1,31 @@
-# 🔗 DevLinks44 – Página de Enlaces Personales
+# 🔗 DevLinks44 – Personal Links Page
 
 <p align="center">
   <img src="Logo.png">
 </p>
 
-**DevLinks44** es una página web tipo *Linktree* desarrollada con **Astro**, diseñada para centralizar todos tus enlaces profesionales en un solo lugar.  
-Ideal para compartir tu portafolio, redes sociales, blog técnico y proyectos destacados.
+**DevLinks44** is a *Linktree*-style web page developed with **Astro**, designed to centralize all your professional links in one place.  
+Ideal for sharing your portfolio, social networks, technical blog, and featured projects.
 
 ---
 
-## 🌐 Sitio web
+## 🌐 Website
 
 👉 [https://devlinks44.netlify.app](https://devlinks44.netlify.app)
 
 ---
 
-## 🧩 Características
+## 🧩 Features
 
-- 🎯 Diseño limpio y responsivo
-- ⚡️ Carga rápida gracias a Astro
-- 🌍 Enlaces a GitHub, blog, portafolio, cursos y redes sociales
-- 🖼️ Iconos personalizados y estilo adaptable
-- 📁 Organización modular con componentes reutilizables
+- 🎯 Clean and responsive design
+- ⚡️ Fast loading thanks to Astro
+- 🌍 Links to GitHub, blog, portfolio, courses, and social networks
+- 🖼️ Custom icons and adaptable style
+- 📁 Modular organization with reusable components
 
 ---
 
-## 🚀 Instalación local
+## 🚀 Local Installation
 
 ```bash
 git clone https://github.com/Devsebastian44/DevLinks.git
@@ -34,26 +34,26 @@ npm install
 npm run dev
 ```
 
-Luego abre `http://localhost:4321` en tu navegador.
+Then open `http://localhost:4321` in your browser.
 
 ---
 
-## 📂 Estructura del proyecto
+## 📂 Project Structure
 
 ```
 DevLinks/
 │── src/
-│   ├── assets/               # Recursos visuales
-│   ├── components/           # Componentes Astro (botones, secciones)
-│   ├── layouts/              # Plantilla principal
+│   ├── assets/               # Visual resources
+│   ├── components/           # Astro components (buttons, sections)
+│   ├── layouts/              # Main template
 │   ├── pages/
-│   │   └── index.astro       # Página principal de enlaces
-│   ├── styles/               # Estilos CSS personalizados
+│   │   └── index.astro       # Main links page
+│   ├── styles/               # Custom CSS styles
 ```
 
 ---
 
-## 📜 Licencia
+## 📜 License
 
-Este proyecto está bajo la licencia **MIT**.  
-Puedes usarlo libremente con fines educativos y personales.
+This project is licensed under **MIT**.  
+You are free to use it for educational and personal purposes.
